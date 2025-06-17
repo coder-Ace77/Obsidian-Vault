@@ -20,12 +20,13 @@
 ---
 
 
-> [!NOTE] Daily Tasks
-> - [ ] Believe in Allah
+> [!NOTE] Daily Tasks(17-June)
+> - [ ] DSU thoughts and notes.
 > - [ ] Exercise
-> - [ ] No wrong content watched today.
-> - [ ] 5 problems Competitive programming
-> - [ ] Javascript 1 video
+> - [ ] 3-4 questions of Div2C
+> - [ ] 1 virtual contest leetcode/codeforces
+> - [ ] Read thinking fastand slow(30 mins)
+> - [ ] Java notes prep + basics basic types + wrappers + arrays + basic of java
 
 
 
@@ -35,16 +36,17 @@
 > [!NOTE] Journal
 > 
 
-| Date    | Exercise | 5 problems | No video* | JS 1 video | Believe | FPS |
-| ------- | -------- | ---------- | --------- | ---------- | ------- | --- |
-| 29-May  | No       | Yes        | Yes       | Yes        | Yes     |     |
-| 30-May  | Yes      | Yes        | No        | No         | Yes     |     |
-| 31-May  | NO       |            |           |            |         |     |
-| 01-June | NO       |            |           |            |         |     |
-| 02-June | NO       | 2          | NO        | No         | Yes     |     |
-|         |          |            |           |            |         |     |
-| 04-June | Yes      | No         | No        | NO         | No      | Yes |
-| 05-June |          |            |           |            |         |     |
+| Date    | Exercise | 5 problems | No video* | JS 1 video | Believe | FPS | Instagram < 1hr |
+| ------- | -------- | ---------- | --------- | ---------- | ------- | --- | --------------- |
+| 29-May  | No       | Yes        | Yes       | Yes        | Yes     |     |                 |
+| 30-May  | Yes      | Yes        | No        | No         | Yes     |     |                 |
+| 31-May  | NO       |            |           |            |         |     |                 |
+| 01-June | NO       |            |           |            |         |     |                 |
+| 02-June | NO       | 2          | NO        | No         | Yes     |     |                 |
+|         |          |            |           |            |         |     |                 |
+| 04-June | Yes      | No         | No        | NO         | No      | Yes |                 |
+| 05-June |          |            |           |            |         |     |                 |
+| 17-June |          |            |           |            |         |     |                 |
 
 
 
