@@ -135,6 +135,41 @@ void movePerson(int u, int v){
 - `parent[x]`: classic DSU parent pointer, applied to both people and team nodes.
 - `teamSize[x]`: only relevant when `x` is a team node (or root of it).
 
+### Range merging:
+
+We need to support three types of operations:
+
+1. Merge team(x),team(y)
+2. Merge team(x),team(x+1)..... team(y)
+3. Display size of a team or find if two players are in same team.
+
+
+> [!NOTE] Solution
+> 
+Let's first consider a problem with only a queries of second and third type. It can be solved in a following manner. Consider a line consisting of all employees from 1 to _n_. An observation: any department looks like a contiguous segment of workers. Let's keep those segments in any logarithmic data structure like a balanced binary search tree (std::set or TreeSet). When merging departments from _x_ to _y_, just extract all segments that are in the range [_x_, _y_] and merge them. For answering a query of the third type just check if employees _x_ and _y_ belong to the same segment. In such manner we get a solution of an easier problem in ![](https://espresso.codeforces.com/9040a33098f83986b0de64475c66584fbfdf0e22.png) per query.
+When adding the queries of a first type we in fact allow some segments to correspond to the same department. Let's add a DSU for handling equivalence classes of segments. Now the query of the first type is just using merge inside DSU for departments which _x_ and _y_ belong to. Also for queries of the second type it's important not to forget to call merge from all extracted segments.
+
+```cpp
+if(type==1){
+	 d.unite(u,v);
+}else if(type==2){
+	// start from this node and remove and merge all that will appear in set
+	// since each node is processed once. 
+	auto it=st.lower_bound(u);
+	vi temp;
+	for(auto j=it;j!=st.end() && (*j)<v;j++){
+		 temp.pb(*j);
+	}
+	for(int i=0;i<temp.size();i++){
+		 d.unite(temp[i],temp[i]+1);
+		 st.erase(temp[i]);
+	}
+}
+else{
+	 cout<<(d.same(u,v)?"YES":"NO")<<endl;
+}
+```
+
 ### Rollback in DSU
 
 A **rollback DSU (Disjoint Set Union)** is a version of DSU that allows you to undo previous union operations.
