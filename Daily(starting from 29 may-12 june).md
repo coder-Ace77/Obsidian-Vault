@@ -21,9 +21,9 @@
 
 
 > [!NOTE] Daily Tasks(17-June)
-> - [ ] DSU thoughts and notes.
-> - [ ] Exercise
-> - [ ] 3-4 questions of Div2C
+> - [x] DSU thoughts and notes.
+> - [x] Exercise
+> - [x] 3-4 questions of Div2C
 > - [ ] 1 virtual contest leetcode/codeforces
 > - [ ] Read thinking fastand slow(30 mins)
 > - [ ] Java notes prep + basics basic types + wrappers + arrays + basic of java
