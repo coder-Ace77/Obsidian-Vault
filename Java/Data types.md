@@ -34,6 +34,7 @@ short s = (short) l;  // may lose data if too big
 ```
 
 Java provides **object versions** of primitive types — called **wrapper classes**. Found in java.lang package.
+These are objects and typically take more space than primitive counterparts.
 
 | Primitive | Wrapper Class |
 | --------- | ------------- |

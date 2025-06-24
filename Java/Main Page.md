@@ -6,4 +6,6 @@
 3. [[Java/Arrays|Arrays]]
 4. [[Functions]]
 5. [[Collections]]
-6. 
+6. [[Classes]]
+7. [[Comparator and comparable]]
+8. [[Exceptions]]
