@@ -367,3 +367,54 @@ class Person {
 	}
 }
 ```
+
+#### Final keyword:
+
+The `final` keyword in Java is a **non-access modifier** that can be applied to **variables**, **methods**, and **classes**, and its meaning depends on where it is used. In general, `final` indicates **immutability** or **non-overridable behavior**.
+
+1. final variable can be assigned only once , making them constant after initialization.
+2. If a reference is final, the **reference can't change**, but the object's internal state **can**.
+```java
+final List<String> list = new ArrayList<>();
+list.add("Hello");  // ✅ allowed
+list = new ArrayList<>(); // ❌ not allowed
+```
+3. A `final` method **cannot be overridden** in a subclass.
+4. A `final` class **cannot be extended**.
+
+#### Static keyword:
+
+The `static` keyword is used to **declare class-level members** — meaning the member belongs to the class itself rather than to any specific instance of the class. This can be applied to **variables**, **methods**, **blocks**, and **nested classes**.
+
+1. **Static Variable** (class variable): Shared among all instances.
+2. **Static Method**: Can be called without creating an object; cannot access instance variables directly.
+3. **Static Nested Class**: Doesn’t need an outer class instance to be used.
+
+#### Abstract keyword:
+
+The `abstract` keyword is used to **define abstract classes and methods** — classes or methods that are **incomplete** and meant to be **extended or implemented** by subclasses.
+
+1. **Abstract Class**: Cannot be instantiated; used as a base class.
+
+```java
+abstract class Animal {
+    abstract void makeSound(); // no body
+    void breathe() { System.out.println("breathing"); }
+}
+```
+
+2. **Abstract Method**: Declared without a body; must be overridden by subclass.
+
+```java
+abstract class Shape {
+    abstract double area(); // only signature
+}
+
+class Circle extends Shape {
+    double area() {
+        return 3.14 * r * r;
+    }
+}
+```
+
+

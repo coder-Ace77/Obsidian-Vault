@@ -13,26 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Java/Exceptions.md",
+                "file": "Java/Design Patterns.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Exceptions"
-            }
-          },
-          {
-            "id": "7d43221c3225f290",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Java/Main Page.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Main Page"
+              "title": "Design Patterns"
             }
           }
         ]
@@ -184,22 +170,33 @@
   },
   "active": "7963a512f2cb38be",
   "lastOpenFiles": [
+    "Java/Main Page.md",
+    "Java/Classes.md",
+    "Java/Basics.md",
+    "Java/Design Patterns.md",
+    "Pasted image 20250624145624.png",
+    "Pasted image 20250624144216.png",
+    "2025-06-24.md",
+    "Untitled.canvas",
+    "Pasted image 20250624141817.png",
+    "Pasted image 20250624133415.png",
+    "Pasted image 20250624133246.png",
+    "Pasted image 20250624131635.png",
+    "Pasted image 20250624130846.png",
+    "Build Tools.md",
+    "Pasted image 20250624130147.png",
+    "Java/Testing.md",
+    "Java/Arrays.md",
+    "Java/Exceptions.md",
     "Pasted image 20250624092712.png",
     "Pasted image 20250624091552.png",
-    "Java/Main Page.md",
-    "Java/Exceptions.md",
     "Java/Comparator and comparable.md",
-    "Java/Classes.md",
-    "Pasted image 20250624075453.png",
-    "Java/Basics.md",
     "Java/Data types.md",
     "Javascript/1.Variables and datatypes.md",
     "Javascript/3.Arrays.md",
     "Java/Collections.md",
     "Java/Functions.md",
     "Java/JUnit.md",
-    "Java/Arrays.md",
-    "Pasted image 20250620093137.png",
     "2025-06-19.md",
     "Javascript/8.ES6.md",
     "Javascript/7. Advanced array functions.md",
@@ -210,26 +207,15 @@
     "Java/Basics",
     "Test-CF.md",
     "CP/Data/DSU.md",
-    "Daily(starting from 29 may-12 june).md",
-    "Exercise.md",
-    "CP/Main page.md",
-    "CP/Data/Partial sums.md",
-    "Pasted image 20250615204535.png",
     "CP/Data",
     "CP",
     "Javascript/Data",
-    "Javascript/Data/Pasted image 20250613090308.png",
-    "Javascript/Data/Pasted image 20250613090042.png",
-    "Javascript/Data/Pasted image 20250613075106.png",
-    "Javascript/Data/Pasted image 20250613075044.png",
-    "Javascript/Data/Pasted image 20250531085031.png",
     "Java",
     "CP/data",
     "Javascript",
     "DSA/Leetcode 150",
     "DSA",
     "CP/Level wise",
-    "Untitled.canvas",
     "first_try.canvas"
   ]
 }
