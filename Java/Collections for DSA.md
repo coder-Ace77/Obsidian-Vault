@@ -169,7 +169,7 @@ main methods are `add()` commonly add to end `set()` to update values or `get()`
 
 contains() / indexOf() -> can be used to find if certain object is present or not.
 
-##### Collections.ncopies:
+##### Collections.nCopies:
 
 This is really helpfull function which helps us to initialize the arraylist with given values.
 However the list created will be immutable meaning all elements share a common internal object. So use manual loop.
