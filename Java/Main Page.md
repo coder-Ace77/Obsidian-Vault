@@ -3,7 +3,7 @@
 
 Basics:
 
-1. [[Basics]]
+1. [[Java/Basics]]
 2. [[Data types]]
 3. [[Java/Arrays|Arrays]]
 4. [[Functions]]
