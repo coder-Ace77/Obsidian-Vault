@@ -71,6 +71,92 @@ Works similar to email and password combo.
 Tips:
 
 1. Root user credentials must not be used to carry out daily work.
-2. USe multifactor authentication - 2 or more auth methods. 
+2. USe multifactor authentication - 2 or more auth methods. (MFA)
+
+#### Authentication vs authorisation:
+
+Authentication: ensures that user is who they say they are. Email/ password or ACCESS key etc.
+Authorisation: What action that user can take.
+
+##### IAM : 
+
+Identity and access management helps to manage aws account and resources. It provides central view to both auths.
+
+1. IAM is global.
+2. Integreated by AWS services.
+3. Shared access
+4. MFA
+
+An IAM user repesents a person or  service interacting with AWS. One can define user in AWS account. So one should create IAM user and then generate auth keys for that IAM user. 
+
+An IAM user can be provided 
+1. Access to AWS management console.
+2. Programming access to AWS CLI and AWS API.
+
+To access console, provide user with user name and password. For programming access AWS genereates set of access keys. When IAM user is created it gets permission at user level. But manageing large teams can be hectic. 
+
+#### IAM groups:
+
+Group is a collectiion of users. All users in group inherit permission of group. So we can give permission to multiple users at once. Groups can be admin , developers , security engineer etc.
+
+Group can have many users.
+Users belong to many groups.
+
+IAM policy is set of access rules assinged to an IAM identity. When any IAM identity makes any API call AWS evaluates the policy associated with them.
+
+Writing AWS policy
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "s3:GetObject",
+        "s3:ListBucket"
+      ],
+      "Resource": [
+        "arn:aws:s3:::*",
+        "arn:aws:s3:::*/*"
+      ]
+    }
+  ]
+}
+```
+
+Effect has two options -> allow / deny
+Action -> Determines the type of action to be done.
+Resource -> Type of objects that policy statement covers. * means wildcard/all.
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": "s3:GetObject",
+      "Resource": "arn:aws:s3:::my-secure-bucket/*",
+      "Condition": {
+        "Bool": {
+          "aws:MultiFactorAuthPresent": "true"
+        }
+      }
+    }
+  ]
+}
+```
+
+#### IAM roles:
+
+An **IAM Role** in AWS is an identity **with specific permissions** that can be assumed by **trusted entities** (like EC2 instances, Lambda functions, users from other accounts, etc.). Unlike users, **roles don't have long-term credentials** (like username/password); instead, temporary security credentials are used.
+
+Why? Actually In practice every API call made to AWS service must be programmically signed and is authenticated. Suppose your EC2 instance wants to access the Storage then EC2 insatance will require auth keys to access storage. Ec2 will thus be assigned an IAM role. Roles are assumed programmcally and these credentails are temporary. Similarly external users can also assume IAM role. These are called federated users.
+
+#### Basics of launching EC2
+
+Most easy to do from AWS console. EC2 instance is a single VM that is hosted on AWS. We can either generate ssh keys and then connect to it via ssh. 
+
+or we can provide it a script that will run when instance is launched. Finally we can access thorugh IP. 
 
 
