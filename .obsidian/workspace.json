@@ -11,13 +11,46 @@
             "id": "7006a839f6ef0b40",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Test-CF.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Test-CF"
+            }
+          },
+          {
+            "id": "4d31f47b2f53839b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Publicis Extras/Code review.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Code review"
+            }
+          },
+          {
+            "id": "1f94eaa137b1c143",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Publicis Extras/CI - CD.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "CI - CD"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -166,7 +199,13 @@
   },
   "active": "673cea70dd8bf739",
   "lastOpenFiles": [
+    "Publicis Extras/Code review.md",
+    "Publicis Extras/CI - CD.md",
+    "Publicis Extras/Functional Programming in Java.md",
+    "Test-CF.md",
+    "Publicis Extras/Security/Basics.md",
     "Two tier vs 3 tier application.md",
+    "Publicis Extras/Security",
     "Publicis Extras/AWS/4. Storage in AWS.md",
     "Publicis Extras/AWS/5. Databases in AWS.md",
     "Publicis Extras/AWS/6. Amazon Monitoring.md",
@@ -180,9 +219,7 @@
     "CP/Main page.md",
     "CP/Data/Partial sums.md",
     "CP/Data/DSU.md",
-    "Publicis Extras/Functional Programming in Java.md",
     "Publicis Extras/DSA.md",
-    "Test-CF.md",
     "Javascript/9.Asynchronous programming.md",
     "Java/Collections for DSA.md",
     "Data/Pasted image 20250625123943.png",
@@ -195,11 +232,8 @@
     "github.pub",
     "github",
     "Java/Main Page.md",
-    "Java/Build Tools.md",
     "Data/Pasted image 20250624195723.png",
     "Data/Pasted image 20250624200948.png",
-    "Exercise.md",
-    "Daily(starting from 29 may-12 june).md",
     "Publicis Extras",
     "Data/Pasted image 20250624200447.png",
     "Pasted image 20250615204535.png",
@@ -212,7 +246,6 @@
     "CP/Data",
     "CP",
     "Javascript/Data",
-    "Java",
     "first_try.canvas"
   ]
 }
